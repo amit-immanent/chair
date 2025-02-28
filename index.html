@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pappu Chair & Sofa Repair</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        nav {
+            background: #ffcc00;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .hero {
+            background: url('IMG20250228150826.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-box {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .service-box img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact a {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #ff6600;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .contact a:hover {
+            background: #222;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Pappu Chair & Sofa Repair</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We specialize in repairing chairs, sofas, and carpets with expert craftsmanship.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3050/3050072.png" alt="Chair">
+                <h3>Chair Repair</h3>
+                <p>Fix office and home chairs efficiently.</p>
+            </div>
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/891/891420.png" alt="Sofa">
+                <h3>Sofa Repair</h3>
+                <p>Professional sofa upholstery and repair.</p>
+            </div>
+            <div class="service-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3103/3103461.png" alt="Carpet">
+                <h3>Carpet Washing</h3>
+                <p>Deep cleaning and stain removal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="data:image/jpeg;base64,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" alt="Chair Repair" onclick="openImage(this.src)">
+            <img src="https://www.orangetree.in/cdn/shop/files/Gallery-1ChiyoL-ShapedSofaBuyOnline.jpg?v=1722852692" alt="Sofa Repair" onclick="openImage(this.src)">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>📞 <a href="tel:9988155217">9988155217</a>, <a href="tel:9779515788">9779515788</a></p>
+        <p>📍 Sector 47-D, Chandigarh</p>
+        <a href="tel:9988155217">Call Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pappu Chair & Sofa Repair | Designed with ❤️</p>
+    </footer>
+
+    <script>
+        function openImage(src) {
+            const newWindow = window.open("");
+            newWindow.document.write('<img src="' + src + '" style="width:100%;">');
+        }
+    </script>
+
+</body>
+</html>
